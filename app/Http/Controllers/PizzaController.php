@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Pizza;
+use Illuminate\Http\Request;
 use Inertia\Inertia;
 
 class PizzaController extends Controller
@@ -23,8 +24,10 @@ class PizzaController extends Controller
         ]);
     }
 
-    //    public function update(Pizza $pizza)
-    //    {
-    //        $pizza->update();
-    //    }
+    public function update(Pizza $pizza, Request $request)
+    {
+        $pizza->update([
+            'status' => $request->status,
+        ]);
+    }
 }
