@@ -31,7 +31,7 @@ export default function UpdatePizzaOrderForm({pizza,className=''}){
     ];
 
     return (
-        <section className={className}>
+        <section className={className} style={{padding:"35px"}}>
             <header>
                 <h2 className="text-lg font-medium text-gray-900">Order Information</h2>
                 <p className="mt-1 text-sm text-gray-600">
